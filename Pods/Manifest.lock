@@ -1,0 +1,24 @@
+PODS:
+  - FYPhoto (2.3.1):
+    - FYVideoCompressor
+    - SDWebImage/Core
+  - FYVideoCompressor (0.0.8)
+  - SDWebImage/Core (5.15.8)
+
+DEPENDENCIES:
+  - FYPhoto
+
+SPEC REPOS:
+  trunk:
+    - FYPhoto
+    - FYVideoCompressor
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  FYPhoto: 1e9c6a519a63946c9c1f661b8cf87442719b4f7f
+  FYVideoCompressor: 33a2cdea0ed4daef332077d69388e6ccc0e7d0c3
+  SDWebImage: cb032eba469c54e0000e78bcb0a13cdde0a52798
+
+PODFILE CHECKSUM: 13cc13beec9b5a574351a5bb074163ebe52bcfba
+
+COCOAPODS: 1.12.1

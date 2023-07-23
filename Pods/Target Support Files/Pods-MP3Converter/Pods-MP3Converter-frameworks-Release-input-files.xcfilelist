@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-MP3Converter/Pods-MP3Converter-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FYPhoto/FYPhoto.framework
+${BUILT_PRODUCTS_DIR}/FYVideoCompressor/FYVideoCompressor.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework

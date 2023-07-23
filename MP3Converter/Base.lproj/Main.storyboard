@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZKw-e4-SFu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MP3Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sXD-ZR-zSG" userLabel="Main Stack">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yf1-fw-vHh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="253.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.1091713825" blue="0.35200547679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Select Video">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectVideoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qin-LU-ceU"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RzP-mZ-wKX">
+                                        <rect key="frame" x="0.0" y="258.5" width="414" height="253"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgT-C8-AkG">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="116.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Conver to Mp3">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="convertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZd-hz-NMY"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Status]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEQ-Uz-stR">
+                                                <rect key="frame" x="0.0" y="136.5" width="414" height="116.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HNG-7E-jE4" userLabel="Segue View">
+                                        <rect key="frame" x="0.0" y="516.5" width="414" height="253.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7A-xy-2Dx">
+                                                <rect key="frame" x="50" y="20" width="314" height="80"/>
+                                                <color key="backgroundColor" red="0.0" green="0.1091713825" blue="0.35200547679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="HbU-co-mKx"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Go to Mp3 List">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="goToListClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u78-cE-foT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="S7A-xy-2Dx" firstAttribute="top" secondItem="HNG-7E-jE4" secondAttribute="top" constant="20" id="Ddo-RB-d2w"/>
+                                            <constraint firstItem="S7A-xy-2Dx" firstAttribute="leading" secondItem="HNG-7E-jE4" secondAttribute="leading" constant="50" id="Lt3-V9-ToZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="S7A-xy-2Dx" secondAttribute="trailing" constant="50" id="T7O-rk-g1X"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RzP-mZ-wKX" firstAttribute="centerY" secondItem="sXD-ZR-zSG" secondAttribute="centerY" id="8wA-33-Heg"/>
+                                    <constraint firstItem="RzP-mZ-wKX" firstAttribute="centerX" secondItem="sXD-ZR-zSG" secondAttribute="centerX" id="pdy-Lq-rc9"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sXD-ZR-zSG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ah6-fz-uhV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sXD-ZR-zSG" secondAttribute="bottom" id="Y5S-Rl-ONU"/>
+                            <constraint firstItem="sXD-ZR-zSG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r7x-j8-hi3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sXD-ZR-zSG" secondAttribute="trailing" id="ueD-Tp-UYP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LMY-jv-pAg"/>
+                    <connections>
+                        <outlet property="convertButton" destination="ZgT-C8-AkG" id="xZl-f0-FZ3"/>
+                        <outlet property="statusLabel" destination="aEQ-Uz-stR" id="gMO-MS-yhR"/>
+                        <segue destination="1ae-RL-aR0" kind="show" identifier="gotToMp3List" id="tcW-IN-6Eh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="78.348214285714278"/>
+        </scene>
+        <!--Mp3 List-->
+        <scene sceneID="ypb-ZA-H72">
+            <objects>
+                <tableViewController id="1ae-RL-aR0" customClass="Mp3ListViewController" customModule="MP3Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ixB-XM-jGQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="1ae-RL-aR0" id="RE5-qg-SgD"/>
+                            <outlet property="delegate" destination="1ae-RL-aR0" id="eNw-vf-KcH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Mp3 List" id="fYx-c9-chh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TD2-Jf-pA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="78"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J5b-KC-Sdd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZKw-e4-SFu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9xc-V4-z1D">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5gV-AN-OWZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8M-e3-Gpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.53623188405798" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
